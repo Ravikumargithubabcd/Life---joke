@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life - joke</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="carditems">
+                <h2>Life - Joke</h2>
+                <h3>Select category / categories:</h3>
+                <form class="categories" method="post" action="/submit">
+                    <input type="checkbox" name="jokeType" value="Programming">Programming
+                    <input type="checkbox" name="jokeType" value="Miscellaneous">Miscellaneous
+                    <input type="checkbox" name="jokeType" value="Dark">Dark
+                    <input type="checkbox" name="jokeType" value="Pun">Pun
+                    <input type="checkbox" name="jokeType" value="Spooky">Spooky
+                    <input type="checkbox" name="jokeType" value="Christmas">Christmas <br>
+                    <input type="submit" id="button" value="Show Joke">
+                </form>
+            </div>
+            <div class="joketext">
+                <textarea name="textarea" id="textarea" cols="30" rows="5"><%= joke %> <%= setup %> <%= delivery %></textarea>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
